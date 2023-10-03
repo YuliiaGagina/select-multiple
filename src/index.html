@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+
+    <title>select multiple</title>
+</head>
+
+<body>
+    <p class="text">It is an example of select multiple</p>
+    <form action="" method="get">
+        <div class="multi-selector">
+            <div class="multi-selector__field">
+                <div class="multi-selector__box"></div>
+                <input type="text" name="" placeholder="Select businesses, You can choose several options."
+                    class="multi-selector__input input" />
+                <span class="input__down-arrow">&blacktriangledown;</span>
+            </div>
+
+            <div class="multi-selector__buisness buisness">
+                <label for="first" class="buisness__first">
+                    <input class="select" type="checkbox" name="" id="first" value="Construction"
+                        onchange="onSecect(event)" />
+                    Construction
+                </label>
+                <label for="second" class="buisness__second">
+                    <input class="select" type="checkbox" name="" id="second" value="Financial"
+                        onchange="onSecect(event)" />
+                    Financial
+                </label>
+                <label for="third" class="buisness__third">
+                    <input class="select" type="checkbox" name="" id="third" value="Manufacturing"
+                        onchange="onSecect(event)" />
+                    Manufacturing
+                </label>
+                <label for="fourth" class="buisness__fourth">
+                    <input class="select" type="checkbox" name="" id="fourth" value="Retail Services"
+                        onchange="onSecect(event)" />
+                    Retail Services
+                </label>
+                <label for="fifth" class="buisness__fifth">
+                    <input class="select" type="checkbox" name="" id="fifth" value="Energy"
+                        onchange="onSecect(event)" />
+                    Energy
+                </label>
+                <label for="sixth" class="buisness__sixth">
+                    <input class="select" type="checkbox" name="" id="sixth" value="Transportation"
+                        onchange="onSecect(event)" />
+                    Transportation
+                </label>
+                <label for="seventh" class="buisness__seventh">
+                    <input class="select" type="checkbox" name="" id="seventh" value="Other"
+                        onchange="onSecect(event)" />
+                    Other
+                </label>
+            </div>
+        </div>
+
+        <div class="selected-buisness"></div>
+    </form>
+</body>
+<script src="./js/index.js"></script>
+
+</html>

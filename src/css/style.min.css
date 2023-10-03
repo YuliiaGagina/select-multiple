@@ -1,0 +1,120 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: rgb(241, 161, 11);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.multi-selector {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.multi-selector__field, .multi-selector__buisness {
+  background-color: rgb(255, 255, 255);
+}
+.multi-selector__field {
+  position: relative;
+  margin-bottom: 1px;
+  border: 1px solid rgb(66, 66, 66);
+  background-color: rgb(231, 228, 228);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 500px;
+  min-height: 60px;
+}
+.multi-selector__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 5px;
+}
+.multi-selector__input {
+  outline: none;
+  border: none;
+  background: transparent;
+  width: 400px;
+}
+.multi-selector__input::-webkit-input-placeholder {
+  padding: 5px;
+  font-size: 18px;
+}
+.multi-selector__input::-moz-placeholder {
+  padding: 5px;
+  font-size: 18px;
+}
+.multi-selector__input:-ms-input-placeholder {
+  padding: 5px;
+  font-size: 18px;
+}
+.multi-selector__input::-ms-input-placeholder {
+  padding: 5px;
+  font-size: 18px;
+}
+.multi-selector__input::placeholder {
+  padding: 5px;
+  font-size: 18px;
+}
+.multi-selector__buisness {
+  -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.buisness label {
+  display: block;
+  padding: 10px;
+  padding-left: 0;
+}
+.buisness label:hover {
+  background-color: blue;
+}
+
+.input__down-arrow {
+  position: absolute;
+  right: 2px;
+  top: 20%;
+  font-size: 28px;
+  cursor: pointer;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.show {
+  display: block;
+}
+
+.rotate180 {
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+}
+
+.text {
+  margin-bottom: 200px;
+  padding-top: 20px;
+  padding-bottom: 20;
+  font-size: 33px;
+  font-weight: 700;
+}
